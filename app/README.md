@@ -105,7 +105,7 @@ Open the link provided by Streamlit in your browser (usually `http://localhost:8
 
 ## 🔗 Contact
 
-For questions or feedback, reach out to **[Your Name]** at **[[your.email@example.com](mailto:zemicahela@gmail.com)]**.
+For questions or feedback, reach out to **[Zemicahel Abraham,]** at **[[zemicahela@gmail.com](mailto:zemicahela@gmail.com)]**.
 
 ```
 

@@ -39,9 +39,8 @@ project/
 
 1. Clone the repository:
 
-```bash
-git clone https://github.com/yourusername/solar-dashboard.git
-cd solar-dashboard
+
+
 ````
 
 2. Create a virtual environment and activate it:
@@ -106,7 +105,7 @@ Open the link provided by Streamlit in your browser (usually `http://localhost:8
 
 ## 🔗 Contact
 
-For questions or feedback, reach out to **[Your Name]** at **[[your.email@example.com](mailto:your.email@example.com)]**.
+For questions or feedback, reach out to **[Your Name]** at **[[your.email@example.com](mailto:zemicahela@gmail.com)]**.
 
 ```
 

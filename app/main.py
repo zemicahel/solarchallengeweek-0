@@ -13,7 +13,7 @@ selected_countries = st.multiselect(
 )
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_DIR = os.path.join(BASE_DIR, "../data/clean")
+DATA_DIR = os.path.join(BASE_DIR, "../data/clean")  
 
 dfs = []
 for country in selected_countries:
@@ -25,7 +25,7 @@ for country in selected_countries:
     path = os.path.join(DATA_DIR, file_name)
 
     if not os.path.exists(path):
-        st.error(f"⚠️ File not found for {country}: expected {path}")
+        st.warning(f"⚠️ File not found for {country}: expected {path}")
         continue
 
     df = load_data(path)
@@ -35,7 +35,14 @@ for country in selected_countries:
 if dfs:
     data = pd.concat(dfs, ignore_index=True)
 else:
-    st.stop()
+    st.warning("No CSV files found. Using demo dataset.")
+    data = pd.DataFrame({
+        "Country": ["Benin","Sierra Leone","Togo"]*10,
+        "GHI": range(30),
+        "DNI": range(30),
+        "DHI": range(30),
+        "Tamb": range(30),
+    })
 
 metric = st.selectbox("Select metric to visualize", ["GHI", "DNI", "DHI", "Tamb"])
 
